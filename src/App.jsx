@@ -2,7 +2,7 @@ import Card from "./components/Card";
 import CardHeader from "./components/CardHeader";
 import CardQuote from "./components/CardQuote";
 import CardText from "./components/CardText";
-
+import Footer from "./ui/Footer";
 const reviews = [
   {
     image: "daniel",
@@ -73,7 +73,7 @@ const reviews = [
 
 function App() {
   return (
-    <main className="bg-(--main-bg) min-h-[100vh] py-15">
+    <main className="bg-(--main-bg) min-h-[100vh] py-15 flex flex-col gap-10">
       <div className=" flex flex-col gap-10 sm:grid sm:grid-cols-2 sm:p-5 md:grid-cols-3 lg:grid-cols-4 lg:gap-6 lg:grid-rows-2 lg:max-w-[80rem] mx-auto items-center justify-center">
         {reviews.map((review, i) => (
           <Card
@@ -99,6 +99,7 @@ function App() {
           </Card>
         ))}
       </div>
+      <Footer />
     </main>
   );
 }
