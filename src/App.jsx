@@ -37,7 +37,7 @@ const reviews = [
     header: "An overall wonderful and rewarding experience",
     description:
       "“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living while doing something I love. ”",
-    bg: "bg-(--main-bg)",
+    bg: "bg-(--white)",
     hdColor: "text-(--card-2)",
     textColor: "text-(--text)",
     gridPos: "lg:col-start-1 lg:col-end-2",
@@ -63,7 +63,7 @@ const reviews = [
     header: " Such a life-changing experience. Highly recommended!",
     description:
       "“ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from professionals who can help me learn programming step by step. I was encouraged to enroll by a former student of theirs who can only say wonderful things about the program. The entire curriculum and staff did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial could ever have. In fact, I’ve often referred to it during interviews as an example of my developent experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 100% recommend! ”",
-    bg: "bg-(--main-bg)",
+    bg: "bg-(--white)",
     hdColor: "text-(--card-2)",
     textColor: "text-(--text)",
     gridPos:
@@ -73,7 +73,7 @@ const reviews = [
 
 function App() {
   return (
-    <main className="bg-(--white) min-h-[100vh] py-15 flex flex-col gap-10">
+    <main className="bg-(--main-bg) min-h-[100vh] py-15 flex flex-col gap-10">
       <div className=" flex flex-col gap-10 sm:grid sm:grid-cols-2 sm:p-5 md:grid-cols-3 lg:grid-cols-4 lg:gap-6 lg:grid-rows-2 lg:max-w-[80rem] mx-auto items-center justify-center">
         {reviews.map((review, i) => (
           <Card
