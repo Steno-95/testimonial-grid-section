@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "Poppins", Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* primary */
+  --primary-light: hsl(260, 100%, 95%);
+  --primary: hsl(264, 82%, 80%);
+  --primary-dark: hsl(263, 55%, 52%);
+
+  --text: hsl(224, 10%, 45%);
+
+  --main-bg: hsl(214, 17%, 92%);
+  --card-1: hsl(0, 0%, 81%);
+  --card-2: hsl(217, 19%, 35%);
+  --card-3: hsl(219, 29%, 14%);
+
+  --black: hsl(0, 0%, 7%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  box-sizing: border-box;
+  font-size: clamp(0.8em, 0.8em + 4vw, 3em);
+}
