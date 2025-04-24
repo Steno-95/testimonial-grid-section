@@ -5,7 +5,7 @@ function Card({ children, bg, pos, quote = undefined }) {
   return (
     <div
       className={
-        `${bg} p-8 rounded-md max-w-[300px] flex lg:p-3 flex-col mx-auto ${pos} sm:max-w-none lg:h-full ` +
+        `${bg} p-8 rounded-md max-w-[300px] flex lg:p-3 flex-col mx-auto ${pos} sm:max-w-none lg:h-full shadow-[5px_10px_10px_var(--black)] ` +
         quoteClass
       }
     >
