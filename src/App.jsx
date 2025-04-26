@@ -29,6 +29,7 @@ const reviews = [
     bg: "bg-(--card-2)",
     hdColor: "text-(--white)",
     textColor: "text-(--card-1)",
+    quote: false,
   },
   {
     image: "jeanette",
@@ -41,6 +42,7 @@ const reviews = [
     hdColor: "text-(--card-2)",
     textColor: "text-(--text)",
     gridPos: "lg:col-start-1 lg:col-end-2",
+    quote: false,
   },
   {
     image: "patrick",
@@ -55,6 +57,7 @@ const reviews = [
     textColor: "text-(--card-1)",
     outColor: "outline-(--primary-dark)",
     gridPos: "sm:col-start-1 sm:col-end-3 md:col-start-2 md:col-end-4",
+    quote: false,
   },
   {
     image: "kira",
@@ -67,14 +70,15 @@ const reviews = [
     hdColor: "text-(--card-2)",
     textColor: "text-(--text)",
     gridPos:
-      "sm:col-start-1 sm:col-end-3 md:col-end-4 lg:col-start-4 lg:col-end-5 lg:row-start-1 lg:row-end-3",
+      "sm:col-start-1 sm:col-end-3 md:col-end-4 xl:col-start-4 xl:col-end-5 xl:row-start-1 xl:row-end-3",
+    quote: false,
   },
 ];
 
 function App() {
   return (
     <main className="bg-(--main-bg) min-h-[100vh] py-15 flex flex-col gap-10">
-      <div className=" flex flex-col gap-10 sm:grid sm:grid-cols-2 sm:p-5 md:grid-cols-3 lg:grid-cols-4 lg:gap-6 lg:grid-rows-2 lg:max-w-[80rem] mx-auto items-center justify-center">
+      <div className=" flex flex-col gap-10 sm:grid sm:grid-cols-2 sm:p-5 md:grid-cols-3 xl:grid-cols-4 lg:gap-6 lg:grid-rows-2 lg:max-w-[80rem] mx-auto items-center justify-center">
         {reviews.map((review, i) => (
           <Card
             key={i}
