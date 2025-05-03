@@ -8,7 +8,7 @@ function CardHeader({
 }) {
   return (
     <header className="flex items-center gap-5 mb-5 lg:mb-3 lg:gap-3 z-10">
-      <picture
+      <figure
         className={`size-[2.1rem] rounded-[100%] lg:size-[3rem] overflow-hidden ${
           outlineColor && outlineColor + " outline-2 "
         }`}
@@ -18,17 +18,17 @@ function CardHeader({
           alt={`${img} photo`}
           className="size-[2.1rem] lg:size-[3rem] "
         />
-      </picture>
-      <div className="flex flex-col">
-        <h1
+      </figure>
+      <article className="flex flex-col">
+        <h2
           className={"text-[.8rem] font-semibold lg:text-[1.2rem] " + userColor}
         >
           {name}
-        </h1>
-        <h2 className={"text-[.7rem] lg:text-[1.1rem] " + textColor}>
-          {verified}
         </h2>
-      </div>
+        <p className={"text-[.7rem] lg:text-[1.1rem] " + textColor}>
+          {verified}
+        </p>
+      </article>
     </header>
   );
 }
